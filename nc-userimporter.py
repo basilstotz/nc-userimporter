@@ -458,6 +458,8 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
         except NameError:
           print("groupadminlist is not defined")
 
+    time.sleep(20)
+    
     # perform the request
     try:
       response = requests.post(config_protocol + '://' + config_adminname + ':' + config_adminpass + '@' + 
@@ -531,7 +533,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
       if config_EduDocs == 'yes':
         ptext = '<font size=14>Hallo %s,</font>' % ncusername
       else:
-        ptext = '<font size=14>Hello %s,</font>' % ncusername
+        ptext = '<font size=14>Hallo %s,</font>' % ncusername
       Story.append(Paragraph(ptext, styles["Justify"]))
       Story.append(Spacer(1, 12))
 
@@ -541,7 +543,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
         else:
           ptext = '<font size=14>Für Sie wurde ein Edu-Docs-Account angelegt.</font>'
       else:
-        ptext = '<font size=14>a Nextcloud-account has been generated for you.</font>'
+        ptext = '<font size=14>Für dich wurde ein Nextcloud-Account angelegt.</font>'
       Story.append(Paragraph(ptext, styles["Justify"]))
       Story.append(Spacer(1, 12))    
 
@@ -551,7 +553,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
         else:
           ptext = '<font size=14>Sie können sich mit folgenden Nutzerdaten einloggen:</font>'
       else:
-        ptext = '<font size=14>You can login with the following user data:</font>'
+        ptext = '<font size=14>Du kannst dich mit folgenden Nutzerdaten einloggen:</font>'
       Story.append(Paragraph(ptext, styles["Normal"]))
       Story.append(Spacer(1, 36))
 
@@ -561,7 +563,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
         else:
           ptext = '<font size=14>Link zu Ihrer EduDocs-Instanz:</font>'
       else:
-        ptext = '<font size=14>Link to your Nextcloud:</font>'
+        ptext = '<font size=14>Link zu deiner Nextcloud-Instanz:</font>'
       Story.append(Paragraph(ptext, styles["Normal"]))
       Story.append(Spacer(1, 12))    
 
@@ -572,7 +574,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
       if config_EduDocs == 'yes':
         ptext = '<font size=14>Nutzername:</font>'
       else:
-        ptext = '<font size=14>Username:</font>'
+        ptext = '<font size=14>Benutzername:</font>'
       Story.append(Paragraph(ptext, styles["Normal"]))
       Story.append(Spacer(1, 12))    
 
@@ -583,7 +585,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
       if config_EduDocs == 'yes':
         ptext = '<font size=14>Passwort:</font>'
       else:
-        ptext = '<font size=14>Password:</font>'
+        ptext = '<font size=14>Passwort:</font>'
       Story.append(Paragraph(ptext, styles["Normal"]))
       Story.append(Spacer(1, 12))    
 
@@ -597,7 +599,7 @@ with codecs.open(os.path.join(appdir, config_csvfile),mode='r', encoding='utf-8'
         else:
           ptext = '<font size=14>Alternativ können Sie mithilfe der Nextcloud-App folgenden QR-Code scannen:</font>'
       else:
-        ptext = '<font size=14>Alternatively, you can scan the following QR-Code in the Nextcloud app:</font>'
+        ptext = '<font size=14>Alternativ kannst du mithilfe der Nextcloud-App folgenden QR-Code scannen:</font>'
       Story.append(Paragraph(ptext, styles["Normal"]))
       Story.append(Spacer(1, 24))       
       # adds qr-code to pdf-file

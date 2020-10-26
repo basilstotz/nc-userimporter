@@ -1,9 +1,9 @@
 <config>
 <!-- Sensitive data! Delete this information after successful data import -->
-    <cloudurl>YOUR-CLOUD-URL</cloudurl> <!-- CHANGE THIS to your cloud domain, e.g. mycloud.mydomain.org or www.mydomain.org/mycloud (without https://) -->
-    <adminname>YOUR-ADMIN-USERNAME</adminname> <!-- CHANGE THIS to your cloud user, who has admin permissions-->
+    <cloudurl>amxa.opsone-cloud.ch</cloudurl> <!-- CHANGE THIS to your cloud domain, e.g. mycloud.mydomain.org or www.mydomain.org/mycloud (without https://) -->
+    <adminname>basil</adminname> <!-- CHANGE THIS to your cloud user, who has admin permissions-->
     <!-- Attention: Please note most special characters are not allowed in passwords, including german umlauts -->
-	<adminpass>YOUR-ADMIN-PASSWORD</adminpass> <!-- CHANGE THIS to the password for that user -->
+	<adminpass>Herakles0815</adminpass> <!-- CHANGE THIS to the password for that user -->
     <!-- Attention: Please note some special characters are not allowed in passwords, avoid using ) } ; # -->
 
 <!-- Settings -->
@@ -17,5 +17,5 @@
 
 <!-- Special settings for EduDocs-Users (www.edudocs.org) -->
     <EduDocs>no</EduDocs> <!-- change from 'no' to 'yes' if you use this importer for an EduDocs-Instance -->
-    <schoolgroup>Lehrkraefte</schoolgroup> <!-- change this to 'SchuelerInnen', 'Lehrkraefte' or another groupname you like to import. PAY ATTENTION TO THE SAME SPELLING (SchuelerInnen / Lehrkraefte)!!! -->
+    <schoolgroup>SchuelerInnen</schoolgroup> <!-- change this to 'SchuelerInnen', 'Lehrkraefte' or another groupname you like to import. PAY ATTENTION TO THE SAME SPELLING (SchuelerInnen / Lehrkraefte)!!! -->
 </config>
